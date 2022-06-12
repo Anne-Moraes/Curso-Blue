@@ -12,7 +12,7 @@ namespace ConsoleApp3
         {
             //x01Cadastro();
             //ex02Pesquisa();
-            //ex03Musica();
+            ex03Musica();
             //ex04Frase();
         }
 
@@ -53,13 +53,98 @@ namespace ConsoleApp3
         {
             string letra, compositor, genero;
 
-            letra = $"I've got this feeling \nThat there's something that I missed \nI could do most anything to you \nDon't you breathe, don't you breathe \nI could do most anything to you \n Something happened \nThat I never understood \nI could do most anything to you \nYou can't leave, you can't leave \nI could do most anything to you" +
-            $" Every second \nDripping off my fingertips \nI could do most anything to you \nWage your war, wage your war \nI could do most anything to you \n Another soldier \nSays hes not afraid to die \nI could do most anything to you \nI am scared, I'm so scared \nI could do most anything to you \nIn slow motion \n The blast is beautiful" +
-            $" \nI could do most anything to you \nDoor slammed shut, Door slammed shut \nI could do most anything to you \nA clock is ticking \nBut it's hidden far away \nI could do most anything to you \nSafe and sound, safe and sound";
-            compositor = "Snow Patrol";
-            genero = "Rock alternativo";
+            
 
-            Console.WriteLine($"letra da música: {letra} \n\nCompositor: {compositor} \nGênero: {genero}");
+            string letra1 = @"
+            
+            Up Down
+            Boy Epic
+            Gênero = Rock alternativo
+
+            I'll be stuck chasing time
+            Running all my life
+            Trying not to lose a fight
+            Burning in my eyes
+            In mad mad world
+            I'm falling in
+            Little lost to go
+            Tryna start again
+            Tick tock don't stop
+            I'm breathing
+
+            Harder that I see it's
+            Up down
+            Up down
+            And barely breathing
+            But I follow
+            Follow you down
+            And put my knees in
+            Spinning
+            Up down
+            Up down
+            Still fighting my demons
+            But I follow
+            Follow you down
+
+            Through the glass I lose myself
+            In the darkest deep
+            Time is just a memory
+            With its sun's on me
+
+            It's a mad mad world
+            I'm drowning in
+            Does anybody know
+            How to start again
+            Tick tock don't stop
+            I'm breathing
+
+            Harder that I see it's
+            Up down
+            Up down
+            And barely breathing
+            But I follow
+            Follow you down
+            And put my knees in
+            Spinning
+            Up down
+            Up down
+            Still fighting my demons
+            But I follow
+            Follow you
+
+            Falling
+            Faster
+            Than heart's beating
+            Tick tock don't stop
+            I'm still breathing
+
+            Falling
+            Faster
+            Than heart's beat
+            Tick tock don't stop
+            I'm still breathing
+            Yea, I'm still breathing
+
+            Harder that I see it's
+            Up down
+            Up down
+            And barely breathing
+            But I follow
+            Follow you down
+            And put my knees in
+            Spinning
+            Up down
+            Up down
+            Still fighting my demons
+            But I follow
+            Follow you down
+
+            But I follow
+            Follow you down";
+
+
+
+            Console.WriteLine(letra1);
             Console.ReadLine();
         }
         static void ex04Frase()
