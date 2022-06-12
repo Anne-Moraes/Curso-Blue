@@ -12,12 +12,18 @@ namespace ConsoleApp3
         {
             //x01Cadastro();
             //ex02Pesquisa();
-            ex03Musica();
+            //ex03Musica();
             //ex04Frase();
         }
 
         static void ex01Cadastro()
         {
+            /*Elabore um programa que escreve seu nome completo, 
+             seu endereço, o CEP e telefone em linhas separadas.*/
+
+
+            Console.WriteLine("Insira seus Dados para realizar o cadatro:")
+
             string nome, endereço;
             int telefone, CEP;
 
@@ -39,6 +45,13 @@ namespace ConsoleApp3
         }
         static void ex02Pesquisa()
         {
+            /* Escolha uma mulher famosa na história da tecnologia e implemente um 
+            programa que escreve seu nome, sua formação e uma contribuição feita por ela 
+            dentro da tecnologia em linhas separadas. */
+
+
+            Console.WriteLine("Você será apresentado a uma mulher incrível!");
+
             string nome, formação, contribuição;
 
             nome = "Ada Lovelace";
@@ -51,14 +64,16 @@ namespace ConsoleApp3
         }
         static void ex03Musica()
         {
-            string letra, compositor, genero;
+            //Elabore um programa que mostre na tela uma letra de música que você gosta, o compositor e o gênero musical em linhas separadas.
 
-            
+            Console.WriteLine("Já conhece essa música?:");
 
-            string letra1 = @"
+            string letra;
+
+            letra = @"
             
-            Up Down
-            Boy Epic
+            Nome da Música: Up Down
+            Nome do Cantor: Boy Epic
             Gênero = Rock alternativo
 
             I'll be stuck chasing time
@@ -144,11 +159,14 @@ namespace ConsoleApp3
 
 
 
-            Console.WriteLine(letra1);
+            Console.WriteLine(letra);
+
             Console.ReadLine();
         }
         static void ex04Frase()
         {
+            //Elabore um programa que exibe uma mensagem que incentive outras mulheres a entrar na tecnologia.
+
             Console.WriteLine("E o mais bonito disso é que também é possível mudar o mundo escrevendo software 'Ana Paula Gomes'");
 
         }

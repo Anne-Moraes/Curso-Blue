@@ -15,10 +15,13 @@ namespace Semana1Dia2
             //ex02SomaDeNumeros();
             //ex3Salario();
             //ex04Idade();
-            ex05Conversor();
+           //ex05Conversor();
         }
         static void ex01Idade()
         {
+            //Faça um programa que pergunte ao usuário ano de nascimento e imprima sua idade.
+
+
             int anoNascimento, anoAtual, idade;
 
             Console.WriteLine("Vamos calcular sua idade? Vamos começar.");
@@ -36,6 +39,10 @@ namespace Semana1Dia2
         }
         static void ex02SomaDeNumeros()
         {
+            //Escreva um programa que leia 10 valores inteiros e ao final exiba a soma dos números.
+             
+            Console.WriteLine("Soma de números.");
+
             int num1, num2, num3, num4, num5, num6, num7, num8, num9, num10;
 
             Console.WriteLine("Digite 10 números para somar:");
@@ -55,6 +62,13 @@ namespace Semana1Dia2
         }
         static void ex3Salario()
         {
+            /*Escreva um programa que leia o número de horas trabalhadas e 
+            um funcionário, o valor que recebe por hora e calcula o salário 
+            desse funcionário. A seguir, mostre o número e o salário do funcionário, 
+            com duas casas decimais.*/
+
+            
+            Console.WriteLine("Calcule o salário com base nas horas trabalhadas e o valor das mesmas:");
 
             int hrsTrabalhadas;
             Double valorHr, salario;
