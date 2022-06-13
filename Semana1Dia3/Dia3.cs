@@ -11,18 +11,53 @@ namespace Semana1Dia3
         static void Main(string[] args)
         {
             //ex01ContadorDeNotas();
-            //ex02SomaDeNumeros();
+            //ex02ComparaçãoDeNumeros();
             //ex03MediaDeNotas();
             //ex04NotaAmericana();
             //ex05AumentoSalarial();
         }
         static void ex01ContadorDeNotas()
         {
+            /*@"
+            Leia um valor de ponto flutuante com duas casas decimais. 
+            Este valor representa um valor monetário. 
+            A seguir, calcule o menor número de notas e moedas possíveis no qual o valor pode ser decomposto. 
+            As notas consideradas são de 100, 50, 20, 10, 5, 2."*/
+
+            Console.WriteLine(
 
         }
-        static void ex02ContadorDeNotas()
+        static void ex02ComparaçãoDeNumeros()
         {
+            //2. Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da mensagem “x é o maior”.
 
+            Console.WriteLine("Descubra qual o maior número!");
+
+            Console.WriteLine("Digite 3 números:");
+
+            int n1, n2, n3;
+            n1 = int.Parse(Console.ReadLine());
+            n2 = int.Parse(Console.ReadLine());
+            n3 = int.Parse(Console.ReadLine());
+
+            if (n1 > n2 && n1 > n3)
+            {
+                Console.WriteLine($"O maior número é: {n1}.");
+
+            }
+            else if (n2 > n1 && n2 > n3)
+            {
+
+                Console.WriteLine($"O maior número é: {n2}.");
+
+            }
+            else if (n3 > n1 && n3 > n2)
+            {
+
+                Console.WriteLine($"O maior número é: {n3}");
+
+            }
+            else;
         }
         static void ex03MediaDeNotas()
         {
