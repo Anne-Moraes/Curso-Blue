@@ -143,9 +143,9 @@ namespace Semana1Dia2
             libraEsterlina = valor / cotaçãoDiaLibraEsterlina;
             dolarCanadense = valor / cotaçãoDiaDolarCanadense;
             pesoArgentino = valor / cotaçãoDiaPesoArgentino;
-            pesoChileno = valor / cotaçãoDiaPesoChileno;
-
-            Console.WriteLine($"A conversão para dolar = US${dolar("F2", CultureInfo.InvariantCulture)} \nA conversão para euro = €{euro("F2", CultureInfo.InvariantCulture)} \nA conversão em libra esterlina = £{libraEsterlina("F2", CultureInfo.InvariantCulture)}  \nA conversão em dolar canadense = C${dolarCanadense("F2", CultureInfo.InvariantCulture)} \nA conversão em peso argentino = ${pesoArgentino("F2", CultureInfo.InvariantCulture)} \nA conversão em pesoChileno = ${pesoChileno("F2", CultureInfo.InvariantCulture)}");
+            pesoChileno = valor / cotaçãoDiaPesoChileno;           
+            
+            Console.WriteLine($"A conversão para dolar = US${dolar} \nA conversão para euro = €{euro} \nA conversão em libra esterlina = £{libraEsterlina}  \nA conversão em dolar canadense = C${dolarCanadense} \nA conversão em peso argentino = ${pesoArgentino} \nA conversão em pesoChileno = ${pesoChileno}");
 
             Console.ReadLine();
         }

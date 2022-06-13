@@ -22,7 +22,7 @@ namespace ConsoleApp3
              seu endereço, o CEP e telefone em linhas separadas.*/
 
 
-            Console.WriteLine("Insira seus Dados para realizar o cadatro:")
+            Console.WriteLine("Insira seus Dados para realizar o cadatro:");
 
             string nome, endereço;
             int telefone, CEP;
@@ -50,17 +50,24 @@ namespace ConsoleApp3
             dentro da tecnologia em linhas separadas. */
 
 
-            Console.WriteLine("Você será apresentado a uma mulher incrível!");
+            Console.WriteLine("Você será apresentado a uma mulher incrível! Você tem interesse?");
 
-            string nome, formação, contribuição;
+            String resposta;
+            resposta = Console.ReadLine();
 
-            nome = "Ada Lovelace";
-            formação = "Sem nenhuma";
-            contribuição = "Criação do primeiro algoritmo da história em 1843";
+            if (resposta == "S" || resposta == "s")
+            {
+                string nome, formação, contribuição;
 
-            Console.WriteLine($"{nome}, {formação} formação, teve como uma de suas contribuições há tecnologia a {contribuição}");
+                nome = "Ada Lovelace";
+                formação = "Sem nenhuma";
+                contribuição = "Criação do primeiro algoritmo da história em 1843";
 
-            Console.ReadLine();
+                Console.WriteLine($"{nome} \n{formação} formação \nteve como uma de suas contribuições a tecnologia há {contribuição}.");
+
+                Console.ReadLine();
+            }
+            else;
         }
         static void ex03Musica()
         {
@@ -167,8 +174,17 @@ namespace ConsoleApp3
         {
             //Elabore um programa que exibe uma mensagem que incentive outras mulheres a entrar na tecnologia.
 
-            Console.WriteLine("E o mais bonito disso é que também é possível mudar o mundo escrevendo software 'Ana Paula Gomes'");
+            Console.WriteLine("Você é uma mulher interessada em Tecnologia? S/N?");
+            
+            String resposta;
 
+            resposta = Console.ReadLine();
+
+            if (resposta == "S" || resposta == "s")
+            {
+                Console.WriteLine("E o mais bonito disso é que também é possível mudar o mundo escrevendo software 'Ana Paula Gomes'");
+            }
+            else;
         }
     }
 }
