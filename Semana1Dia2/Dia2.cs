@@ -15,7 +15,7 @@ namespace Semana1Dia2
             //ex02SomaDeNumeros();
             //ex3Salario();
             //ex04Idade();
-           //ex05Conversor();
+           ex05Conversor();
         }
         static void ex01Idade()
         {
@@ -77,7 +77,8 @@ namespace Semana1Dia2
             hrsTrabalhadas = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o valor recebido por hora:");
-            valorHr = double.Parse(Console.ReadLine());
+            valorHr = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
 
             salario = hrsTrabalhadas * valorHr;
 
@@ -120,22 +121,27 @@ namespace Semana1Dia2
             valor = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a Cotação do dia em Dolar:");
-            cotaçãoDiaDolar = double.Parse(Console.ReadLine());
+            cotaçãoDiaDolar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Digite a Cotação do dia em Euro:");
-            cotaçãoDiaEuro = double.Parse(Console.ReadLine());
+            cotaçãoDiaEuro = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
 
             Console.WriteLine("Digite a Cotação do dia em Libra Esterlina:");
-            cotaçãoDiaLibraEsterlina = double.Parse(Console.ReadLine());
+            cotaçãoDiaLibraEsterlina = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
 
             Console.WriteLine("Digite a Cotação do dia em Dolar Canadense:");
-            cotaçãoDiaDolarCanadense = double.Parse(Console.ReadLine());
+            cotaçãoDiaDolarCanadense = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
 
             Console.WriteLine("Digite a Cotação do dia em Peso Argentino:");
-            cotaçãoDiaPesoArgentino = double.Parse(Console.ReadLine());
+            cotaçãoDiaPesoArgentino = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
 
             Console.WriteLine("Digite a Cotação do dia em Chileno:");
-            cotaçãoDiaPesoChileno = double.Parse(Console.ReadLine());
+            cotaçãoDiaPesoChileno = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
 
 
             dolar = valor / cotaçãoDiaDolar;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Semana1Dia3
 {
@@ -10,7 +11,7 @@ namespace Semana1Dia3
     {
         static void Main(string[] args)
         {
-            //ex01ContadorDeNotas();
+            ex01ContadorDeNotas();
             //ex02ComparaçãoDeNumeros();
             //ex03MediaDeNotas();
             //ex04NotaAmericana();
@@ -24,7 +25,68 @@ namespace Semana1Dia3
             A seguir, calcule o menor número de notas e moedas possíveis no qual o valor pode ser decomposto. 
             As notas consideradas são de 100, 50, 20, 10, 5, 2."*/
 
-            Console.WriteLine(
+            Console.WriteLine("Contando Notas!");
+
+            Console.WriteLine("Insira um valor:");
+            double valor;
+            int contador;
+
+            valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            contator = 0;
+
+
+            do
+                {
+                    valor = valor - 100;
+                    contator += 1;
+                    Console.WriteLine(contator);
+                }
+
+            do 
+                {
+                    valor = valor - 50;
+                    contator += 1;
+                    Console.WriteLine(contator);
+                }
+            while (valor >= 25);
+            {
+                valor = (int)valor - 25;
+                contator += 1;
+                Console.WriteLine(contator);
+            }
+
+            while (valor >= 20)
+            {
+                valor = (int)valor - 20;
+                contator += 1;
+                Console.WriteLine(contator);
+            }
+            while (valor >= 10)
+            {
+                valor = (int)valor - 10;
+                contator += 1;
+                Console.WriteLine(contator);
+            }
+
+            while (valor >= 5)
+            {
+                valor = (int)valor - 5;
+                contator += 1;
+                Console.WriteLine(contator);
+            }
+            while (valor >= 0.25)
+            {
+                valor = (int)valor - 0.5;
+                contator += 1;
+                Console.WriteLine(contator);
+            }
+
+            while (valor >= 0.25)
+            {
+                valor = (int)valor - 0.25;
+                contator += 1;
+                Console.WriteLine(contator);
+            }
 
         }
         static void ex02ComparaçãoDeNumeros()
@@ -73,9 +135,9 @@ namespace Semana1Dia3
 
             double nota1, nota2, nota3, notaFinal;
 
-            nota1 = double.Parse(Console.ReadLine());
-            nota2 = double.Parse(Console.ReadLine());
-            nota3 = double.Parse(Console.ReadLine());
+            nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             notaFinal = (nota1 + nota2 + nota3) / 3;
 
@@ -111,9 +173,9 @@ namespace Semana1Dia3
 
             double nota1, nota2, nota3, notaFinal;
 
-            nota1 = double.Parse(Console.ReadLine());
-            nota2 = double.Parse(Console.ReadLine());
-            nota3 = double.Parse(Console.ReadLine());
+            nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             notaFinal = (nota1 + nota2 + nota3) / 3;
 
@@ -165,7 +227,7 @@ namespace Semana1Dia3
 
             Console.WriteLine("Insira o salário atual:");
 
-            Double salario = double.Parse(Console.ReadLine());
+            Double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             
 
             if (salario == 0 || salario <= 400.00)
