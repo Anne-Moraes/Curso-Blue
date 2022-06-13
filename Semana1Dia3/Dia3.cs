@@ -28,67 +28,69 @@ namespace Semana1Dia3
             Console.WriteLine("Contando Notas!");
 
             Console.WriteLine("Insira um valor:");
-            double valor;
-            int contador;
+            double valor;           
 
-            valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            contator = 0;
+            valor = double.Parse(Console.ReadLine());
 
 
-            do
+            for (int i = 0; i < valor; i++)
+            {
+
+                while (valor >= 100) ;
                 {
                     valor = valor - 100;
-                    contator += 1;
-                    Console.WriteLine(contator);
+                    
+                    Console.WriteLine(valor);
                 }
 
-            do 
+                while (valor >= 50) ;
                 {
                     valor = valor - 50;
-                    contator += 1;
-                    Console.WriteLine(contator);
+                   
+                    Console.WriteLine(valor);
                 }
-            while (valor >= 25);
-            {
-                valor = (int)valor - 25;
-                contator += 1;
-                Console.WriteLine(contator);
-            }
+                while (valor >= 25) ;
+                {
+                    valor = (int)valor - 25;
+                    
+                    Console.WriteLine(valor);
+                }
 
-            while (valor >= 20)
-            {
-                valor = (int)valor - 20;
-                contator += 1;
-                Console.WriteLine(contator);
-            }
-            while (valor >= 10)
-            {
-                valor = (int)valor - 10;
-                contator += 1;
-                Console.WriteLine(contator);
-            }
+                while (valor >= 20)
+                {
+                    valor = (int)valor - 20;
+                    
+                    Console.WriteLine(valor);
+                }
+                while (valor >= 10)
+                {
+                    valor = (int)valor - 10;
+                    
+                    Console.WriteLine(valor);
+                }
 
-            while (valor >= 5)
-            {
-                valor = (int)valor - 5;
-                contator += 1;
-                Console.WriteLine(contator);
-            }
-            while (valor >= 0.25)
-            {
-                valor = (int)valor - 0.5;
-                contator += 1;
-                Console.WriteLine(contator);
-            }
+                while (valor >= 5)
+                {
+                    valor = (int)valor - 5;
+                    
+                    Console.WriteLine(valor);
+                }
+                while (valor >= 0.25)
+                {
+                    valor = (int)valor - 0.5;
+                    
+                    Console.WriteLine(valor);
+                }
 
-            while (valor >= 0.25)
-            {
-                valor = (int)valor - 0.25;
-                contator += 1;
-                Console.WriteLine(contator);
+                while (valor >= 0.25)
+                {
+                    valor = (int)valor - 0.25;
+                    Console.WriteLine(valor);
+                }
             }
 
         }
+
         static void ex02ComparaçãoDeNumeros()
         {
             //2. Faça um programa que leia três valores e apresente o maior dos três valores lidos seguido da mensagem “x é o maior”.
@@ -215,7 +217,7 @@ namespace Semana1Dia3
 
         }
         static void ex05AumentoSalarial()
-        {   /*
+            {   /*
             @"A Blue resolveu dar um aumento de salários a seus funcionários de acordo com os dados abaixo:
             Salário de 0 até 400.00 ganha 15% Salário de 400.01 até 800.00 ganha 12% Salário de 800.01 até 
             1200.00 ganha 10% Salário de 1200.01 até 2000.00 ganha 7% Acima de 2000.00 ganha 4%

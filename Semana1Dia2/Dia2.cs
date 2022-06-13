@@ -118,7 +118,7 @@ namespace Semana1Dia2
             Double valor, cotaçãoDiaDolar, cotaçãoDiaEuro, cotaçãoDiaLibraEsterlina, cotaçãoDiaDolarCanadense, cotaçãoDiaPesoArgentino, cotaçãoDiaPesoChileno, dolar, euro, libraEsterlina, dolarCanadense, pesoArgentino, pesoChileno;
             
             Console.WriteLine("Digite um valor em Real Brasileiro para converter:");
-            valor = double.Parse(Console.ReadLine());
+            valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.WriteLine("Digite a Cotação do dia em Dolar:");
             cotaçãoDiaDolar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -151,7 +151,7 @@ namespace Semana1Dia2
             pesoArgentino = valor / cotaçãoDiaPesoArgentino;
             pesoChileno = valor / cotaçãoDiaPesoChileno;           
             
-            Console.WriteLine($"A conversão para dolar = US${dolar} \nA conversão para euro = €{euro} \nA conversão em libra esterlina = £{libraEsterlina}  \nA conversão em dolar canadense = C${dolarCanadense} \nA conversão em peso argentino = ${pesoArgentino} \nA conversão em pesoChileno = ${pesoChileno}");
+            Console.WriteLine($"A conversão para dolar = US${dolar.ToString("F")} \nA conversão para euro = €{euro.ToString("F")} \nA conversão em libra esterlina = £{libraEsterlina.ToString("F")}  \nA conversão em dolar canadense = C${dolarCanadense.ToString("F")} \nA conversão em peso argentino = ${pesoArgentino.ToString("F")} \nA conversão em pesoChileno = ${pesoChileno.ToString("F")}");
 
             Console.ReadLine();
         }
