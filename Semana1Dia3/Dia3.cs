@@ -28,66 +28,92 @@ namespace Semana1Dia3
             Console.WriteLine("Contando Notas!");
 
             Console.WriteLine("Insira um valor:");
-            double valor;           
+            double valor;
+            int nota100, nota50, nota25, nota20, nota10, nota5, nota2, moeda1, moeda050, moeda025, moeda010; 
 
-            valor = double.Parse(Console.ReadLine());
+            valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+            nota100 = 0;
+            nota50 = 0;
+            nota25 = 0;
+            nota20 = 0;
+            nota10 = 0;
+            nota5 = 0;
+            nota2 = 0;
+            moeda1 = 0;
+            moeda050 = 0;
+            moeda025 = 0;
+            moeda010 = 0;
 
-            for (int i = 0; i < valor; i++)
-            {
-
-                while (valor >= 100) ;
+                while (valor >= 100)
                 {
                     valor = valor - 100;
-                    
-                    Console.WriteLine(valor);
+                    nota100++;
                 }
-
-                while (valor >= 50) ;
+                while (valor >= 50)
                 {
                     valor = valor - 50;
-                   
-                    Console.WriteLine(valor);
+                    nota50++;
                 }
-                while (valor >= 25) ;
+                while (valor >= 25)
                 {
-                    valor = (int)valor - 25;
-                    
-                    Console.WriteLine(valor);
+                    valor = valor - 25;
+                    nota25++;
                 }
-
                 while (valor >= 20)
                 {
-                    valor = (int)valor - 20;
-                    
-                    Console.WriteLine(valor);
+                    valor = valor - 20;
+                    nota20++;
                 }
                 while (valor >= 10)
                 {
-                    valor = (int)valor - 10;
-                    
-                    Console.WriteLine(valor);
+                    valor = valor - 10;
+                    nota10++;
                 }
 
                 while (valor >= 5)
                 {
-                    valor = (int)valor - 5;
-                    
-                    Console.WriteLine(valor);
+                    valor = valor - 5;
+                    nota5++;
                 }
-                while (valor >= 0.25)
+                while (valor >= 2)
                 {
-                    valor = (int)valor - 0.5;
-                    
-                    Console.WriteLine(valor);
+                    valor = valor - 2;
+                    nota2++;
                 }
 
+                while (valor >= 1)
+                {
+                    valor = valor - 1;
+                    moeda1++;
+                }
+                while (valor >= 0.50)
+                {
+                    valor = valor - 0.50;
+                    moeda050++;
+                }
                 while (valor >= 0.25)
                 {
-                    valor = (int)valor - 0.25;
-                    Console.WriteLine(valor);
+                    valor = valor - 0.25;
+                    moeda025++;
                 }
-            }
+                while (valor >= 0.10)
+                {
+                    valor = valor - 0.10;
+                    moeda010++;
+                }
+              
+            Console.WriteLine(nota100);
+            Console.WriteLine(nota50);
+            Console.WriteLine(nota25);
+            Console.WriteLine(nota20);
+            Console.WriteLine(nota10);
+            Console.WriteLine(nota5);
+            Console.WriteLine(nota2);
+            Console.WriteLine(moeda1);
+            Console.WriteLine(moeda050);
+            Console.WriteLine(moeda025);
+            Console.WriteLine(moeda010);
 
         }
 
