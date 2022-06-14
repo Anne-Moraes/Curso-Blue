@@ -13,10 +13,9 @@ namespace Semana1Dia4
             //ex01ContadorDeNotas();
             //ex02ComparaçãoDeNumeros();
             //ex03MediaDeNotas();
-            //ex4Jokenpo();
+            ex4Jokenpo();
         }
-        static void ex4Jokenpo()
-        { }
+        
             static void ex4Jokenpo()
         {
             

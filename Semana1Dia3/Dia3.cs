@@ -11,11 +11,11 @@ namespace Semana1Dia3
     {
         static void Main(string[] args)
         {
-            ex01ContadorDeNotas();
+            ///ex01ContadorDeNotas();
             //ex02ComparaçãoDeNumeros();
             //ex03MediaDeNotas();
             //ex04NotaAmericana();
-            //ex05AumentoSalarial();
+            ex05AumentoSalarial();
         }
         static void ex01ContadorDeNotas()
         {
@@ -175,7 +175,7 @@ namespace Semana1Dia3
                 Console.WriteLine($"Sua nota foi {notaFinal}, infelizmente você está de recuperação.");
 
             }
-            else if (notaFinal > 7)
+            else if (notaFinal >= 7)
             {
 
                 Console.WriteLine($"Sua nota foi {notaFinal}, parabéns você passou!");
@@ -213,25 +213,25 @@ namespace Semana1Dia3
                 Console.WriteLine($"Sua nota foi F, infelizmente você está de recuperação.");
 
             }
-            else if (notaFinal >= 6 && notaFinal < 7)
+            else if (notaFinal < 7)
             {
 
                 Console.WriteLine($"Sua nota foi D, parabéns você passou por pouco!");
 
             }
-            else if (notaFinal >= 7 && notaFinal < 8)
+            else if (notaFinal < 8)
             {
 
                 Console.WriteLine($"Sua nota foi C, parabéns você na média! continue se esforçando.");
 
             }
-            else if (notaFinal >= 8 && notaFinal < 9)
+            else if (notaFinal < 9)
             {
 
                 Console.WriteLine($"Sua nota foi B, parabéns você está acima da média! Continue se esforçando.");
 
             }
-            else if (notaFinal >= 9 || notaFinal == 10)
+            else if (notaFinal < 10)
             {
 
                 Console.WriteLine($"Sua nota foi A, parabéns sua nota é excelente!");
@@ -267,7 +267,7 @@ namespace Semana1Dia3
                 Console.WriteLine($"Seu salário é de: {salario} \nSeu novo salario é de: {novoSalario} \nSeu reajuste foi de: 15%");
                 
             }
-            else if (salario == 400.01 || salario <= 800.00)
+            else if (salario <= 800.00)
             {
                 double reajuste, novoSalario;
                 reajuste = 0.12;
@@ -275,7 +275,7 @@ namespace Semana1Dia3
 
                 Console.WriteLine($"Seu salário é de: {salario} \nSeu novo salario é de: {novoSalario} \nSeu reajuste foi de: 12%");
             }
-            else if (salario == 800.01 || salario <= 1200.00)
+            else if (salario <= 1200.00)
             {
                 double reajuste, novoSalario;
                 reajuste = 0.10;
@@ -283,7 +283,7 @@ namespace Semana1Dia3
 
                 Console.WriteLine($"Seu salário é de: {salario} \nSeu novo salario é de: {novoSalario} \nSeu reajuste foi de: 10%");
             }
-            else if (salario == 1200.01 || salario <= 2000.00)
+            else if (salario <= 2000.00)
             {
                 double reajuste, novoSalario;
                 reajuste = 0.7;
@@ -291,7 +291,7 @@ namespace Semana1Dia3
 
                 Console.WriteLine($"Seu salário é de: {salario} \nSeu novo salario é de: {novoSalario} \nSeu reajuste foi de: 7%");
             }
-            else if (salario == 2000.01 || salario > 2000.01)
+            else if (salario > 2000.01)
             {
                 double reajuste, novoSalario;
                 reajuste = 0.4;
