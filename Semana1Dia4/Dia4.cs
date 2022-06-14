@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Semana1Dia4
-{
+{ 
+    
     internal class Dia4
     {
         static void Main(string[] args)
         {
-            ex1MultiplicaçãoDe5();
-            ex2NParesNImpares();
-            //ex3Palavras();
-            //ex4Jokenpo();          
+            //1MultiplicaçãoDe5();
+            //ex2NParesNImpares();
+            ex3Palavras();
+            //ex4Jokempo();          
         }
         static void ex1MultiplicaçãoDe5()
         {
@@ -87,13 +89,34 @@ namespace Semana1Dia4
         }            
         static void ex3Palavras()
         {
+
+
             /*3.Crie um programa que lê 5 palavras e as ordena em um vetor de strings pelo seu tamanho. 
              * Se o tamanho das strings for igual, deve - se manter a ordem inserida pelo usuário.*/
 
+            string[] conjuntoPalavras, conjuntoPalavrasCrescente;
+            
+            conjuntoPalavras = new string[5];
+            conjuntoPalavrasCrescente = new string[5];
 
+            Console.WriteLine("Organize suas palavras por tamanho! \nDigite 5 palavras: \n");
+
+            for (int i = 0; i < conjuntoPalavras.Length; i++)
+            {               
+                conjuntoPalavras[i] = Console.ReadLine();
+            }
+
+            Array.Sort(conjuntoPalavras, (x, y) => x.Length.CompareTo(y.Length));
+
+            Console.WriteLine($"\n\n");
+
+            foreach (string palavras in conjuntoPalavras)
+            {
+                Console.WriteLine($"{palavras}");
+            }
 
         }
-        static void ex4Jokenpo()
+        static void ex4Jokempo()
         {           
             Console.WriteLine("Vamos jogar JOKEMPO?");
 
@@ -127,13 +150,13 @@ namespace Semana1Dia4
                     Console.WriteLine($"Seu oponente escolheu: {computador}");
                     Console.WriteLine("Você Venceu!");
                 }
-                else if (computador != escolha)
+                else
                 {
                     Console.WriteLine($"Você escolheu: {escolha}");
                     Console.WriteLine($"Seu oponente escolheu: {computador}");
                     Console.WriteLine("Você Perdeu!");
                 }
-                else;
+                
             }
 
         }   
