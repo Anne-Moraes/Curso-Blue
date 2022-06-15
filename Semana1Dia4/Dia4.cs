@@ -12,10 +12,10 @@ namespace Semana1Dia4
     {
         static void Main(string[] args)
         {
-            //1MultiplicaçãoDe5();
+            //ex1MultiplicaçãoDe5();
             //ex2NParesNImpares();
-            ex3Palavras();
-            //ex4Jokempo();          
+            //ex3Palavras();
+            ex4Jokempo();          
         }
         static void ex1MultiplicaçãoDe5()
         {
@@ -29,15 +29,18 @@ namespace Semana1Dia4
             nUsuarios = new int[10];
             multiplicacao = new int[10];
            
-            for (int i = 0; i < nUsuarios.Length; i++)
+            for (int i = 0; i < 10; i++)
             {
                 nUsuarios[i] = int.Parse(Console.ReadLine());
+                
+                for (int j = 0; j < nUsuarios.Length; j++)
+                {
+                    multiplicacao[j] = nUsuarios[j] * 5;
+                }
             }
 
-            for (int i = 0; i < nUsuarios.Length; i++)
-            {
-                multiplicacao[i] = nUsuarios[i] * 5;
-            }
+            Console.WriteLine("\n\n Números inseridos :{ " + String.Join(",", nUsuarios) + " } ");
+            //String.Join identifica no array os elementos e printa
 
             foreach (int num in multiplicacao)
             {
@@ -107,6 +110,8 @@ namespace Semana1Dia4
             }
 
             Array.Sort(conjuntoPalavras, (x, y) => x.Length.CompareTo(y.Length));
+            //tras em ordem alfabetica
+            //.Length.CompareTo compara os dois em ordem de tamanho(Length)
 
             Console.WriteLine($"\n\n");
 
@@ -117,7 +122,14 @@ namespace Semana1Dia4
 
         }
         static void ex4Jokempo()
-        {           
+        {
+            /*
+        Regras:
+        [1]Pedra   ganha de [3]Tesoura
+        [2]Papel   ganha de [1]Pedra
+        [3]Tesoura ganha de [2]Papel
+        */
+
             Console.WriteLine("Vamos jogar JOKEMPO?");
 
             Console.WriteLine("Quantas vezes você quer jogar?");
@@ -148,17 +160,26 @@ namespace Semana1Dia4
                 {
                     Console.WriteLine($"Você escolheu: {escolha}");
                     Console.WriteLine($"Seu oponente escolheu: {computador}");
-                    Console.WriteLine("Você Venceu!");
+                    Console.WriteLine("Você Empatou!");
                 }
-                else
+                else if (escolha == "tesoura" && computador == jokempo[0] || escolha == "pedra" && computador == jokempo[1] || escolha == "papel" && computador == jokempo[2])
                 {
                     Console.WriteLine($"Você escolheu: {escolha}");
                     Console.WriteLine($"Seu oponente escolheu: {computador}");
                     Console.WriteLine("Você Perdeu!");
                 }
-                
+                else 
+                {
+                    Console.WriteLine($"Você escolheu: {escolha}");
+                    Console.WriteLine($"Seu oponente escolheu: {computador}");
+                    Console.WriteLine("Você Ganhou!");
+
+                    //if (escolha == "tesoura" && computador == jokempo[1] || escolha == "pedra" && computador == jokempo[2] || escolha == "papel" && computador == jokempo[0])
+                }
             }
 
-        }   
+        }
+
+           
     }
 }
