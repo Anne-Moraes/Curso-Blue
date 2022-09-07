@@ -14,8 +14,8 @@ namespace Semana1Dia2
             //ex01Idade();
             //ex02SomaDeNumeros();
             //ex3Salario();
-            //ex04Idade();
-           ex05Conversor();
+            ex04Idade();
+           //ex05Conversor();
         }
         static void ex01Idade()
         {
@@ -29,7 +29,7 @@ namespace Semana1Dia2
             Console.WriteLine("Digite seu ano de nascimento:");
             anoNascimento = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o ano atualmente vive:");
+            Console.WriteLine("Digite o ano que atualmente vive:");
             anoAtual = int.Parse(Console.ReadLine());
 
             Console.WriteLine($"Sua idade é: {anoAtual - anoNascimento}");
@@ -90,14 +90,15 @@ namespace Semana1Dia2
         {
             //Leia um valor inteiro correspondente à idade de uma pessoa e mostre-a em anos, meses e dias.
 
-            int idade;
-
             Console.WriteLine("Vamos caucular sua idade em meses e dias? Vamos começar, digite a sua idade:");
+            int idade, meses;
+            double dias;
+
             idade = int.Parse(Console.ReadLine());
+            meses = idade * 12;
+            dias = idade * 365.25;
 
-            Console.WriteLine($"Você tem 31 anos. Sua idade em meses é: {idade * 30} e a sua idade em dias é: {idade * 365}");
-
-            Console.ReadLine();
+            Console.WriteLine($"Você tem {idade} anos {meses} meses e {(int)dias} dias de vida");
         }
         static void ex05Conversor()
         {
